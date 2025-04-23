@@ -2,11 +2,12 @@ name: Send Price Report
 
 on:
   schedule:
-    - cron: '41 8 * * *'      # 15:41 VN (UTC+7) = 8:41 UTC
-    - cron: '43 8 * * *'      # 15:43 VN (UTC+7) = 8:43 UTC
-    - cron: '45 8 * * *'      # 15:45 VN (UTC+7) = 8:45 UTC
-    - cron: '47 8 * * *'      # 15:47 VN (UTC+7) = 8:47 UTC
-  workflow_dispatch:        
+    - cron: '0 0 * * *'      # 07:00 VN (UTC+7) = 0:00 UTC
+    - cron: '20 2 * * *'     # 09:20 VN (UTC+7) = 2:20 UTC
+    - cron: '0 5 * * *'      # 12:00 VN (UTC+7) = 5:00 UTC
+    - cron: '0 9 * * *'      # 16:00 VN (UTC+7) = 9:00 UTC
+    - cron: '0 11 * * *'     # 18:00 VN (UTC+7) = 11:00 UTC
+  workflow_dispatch:
 
 jobs:
   run-bot:
