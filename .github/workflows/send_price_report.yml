@@ -8,7 +8,7 @@ on:
     - cron: '50 6 * * *'     # 13:50 VN (UTC+7) = 6:50 UTC
     - cron: '52 6 * * *'     # 13:52 VN (UTC+7) = 6:52 UTC
     - cron: '54 6 * * *'     # 13:54 VN (UTC+7) = 6:54 UTC
-  workflow_dispatch:         # Cho phép chạy thủ công
+  workflow_dispatch:        
 
 jobs:
   run-bot:
