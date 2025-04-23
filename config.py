@@ -1,8 +1,7 @@
-# config.py
+import os
 
-# --- TELEGRAM ---
-TELEGRAM_BOT_TOKEN = '7743584914:AAF_oFNuFWlmId9yKP0-5SN0JnR-KT6GhRs'
-TELEGRAM_CHAT_ID = '6794790211'  # hoặc user id
+TELEGRAM_BOT_TOKEN = os.environ.get('TELEGRAM_BOT_TOKEN')
+TELEGRAM_CHAT_ID = os.environ.get('TELEGRAM_CHAT_ID')
 
 # --- URLS ---
 URLS = {
