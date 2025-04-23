@@ -9,7 +9,7 @@ def compose_message():
     from datetime import datetime
     now = datetime.now()
     date_str = now.strftime('%d/%m/%Y')
-    msg = f'BẢN TIN GIÁ SÁNG ({date_str}):\n'
+    msg = f'BẢN TIN GIÁ ({date_str}):\n'
     msg += f"\nVàng trong nước: {get_gold_vn()}"
     msg += f"\nVàng thế giới: {get_gold_world()}"
     msg += f"\nBitcoin: {get_bitcoin()}"
