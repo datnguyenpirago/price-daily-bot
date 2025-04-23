@@ -2,11 +2,10 @@ name: Send Price Report
 
 on:
   schedule:
-    - cron: '0 0 * * *'      # 07:00 VN (UTC+7) = 0:00 UTC
-    - cron: '20 2 * * *'     # 09:20 VN (UTC+7) = 2:20 UTC
-    - cron: '0 5 * * *'      # 12:00 VN (UTC+7) = 5:00 UTC
-    - cron: '0 9 * * *'      # 16:00 VN (UTC+7) = 9:00 UTC
-    - cron: '0 11 * * *'     # 18:00 VN (UTC+7) = 11:00 UTC
+    - cron: '59 7 * * *'      # 14:59 VN (UTC+7) = 7:59 UTC
+    - cron: '0 8 * * *'      # 15:00 VN (UTC+7) = 8:00 UTC
+    - cron: '2 8 * * *'      # 15:02 VN (UTC+7) = 8:02 UTC
+    - cron: '4 8 * * *'      # 15:04 VN (UTC+7) = 8:04 UTC
   workflow_dispatch:        
 
 jobs:
@@ -23,6 +22,9 @@ jobs:
       - name: Install dependencies
         run: |
           pip install -r requirements.txt
+
+      - name: Show current time
+        run: date
 
       - name: Run price bot
         env:
