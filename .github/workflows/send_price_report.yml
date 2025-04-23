@@ -2,10 +2,10 @@ name: Send Price Report
 
 on:
   schedule:
-    - cron: '16 7 * * *'      # 14:16 VN (UTC+7) = 7:16 UTC
-    - cron: '18 7 * * *'      # 14:18 VN (UTC+7) = 7:18 UTC
-    - cron: '20 7 * * *'      # 14:20 VN (UTC+7) = 7:20 UTC
-    - cron: '22 7 * * *'      # 14:22 VN (UTC+7) = 7:22 UTC
+    - cron: '36 7 * * *'      # 14:36 VN (UTC+7) = 7:36 UTC
+    - cron: '38 7 * * *'      # 14:38 VN (UTC+7) = 7:38 UTC
+    - cron: '40 7 * * *'      # 14:40 VN (UTC+7) = 7:40 UTC
+    - cron: '42 7 * * *'      # 14:42 VN (UTC+7) = 7:42 UTC
   workflow_dispatch:        
 
 jobs:
@@ -25,7 +25,7 @@ jobs:
 
       - name: Run price bot
         env:
-          TELEGRAM_BOT_TOKEN: 7743584914:AAF_oFNuFWlmId9yKP0-5SN0JnR-KT6GhRs
-          TELEGRAM_CHAT_ID: 6794790211
+          TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+          TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
         run: |
           python main.py
