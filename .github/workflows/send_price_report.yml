@@ -27,7 +27,7 @@ jobs:
 
       - name: Run price bot
         env:
-          TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
-          TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
+          TELEGRAM_BOT_TOKEN: 7743584914:AAF_oFNuFWlmId9yKP0-5SN0JnR-KT6GhRs
+          TELEGRAM_CHAT_ID: 6794790211
         run: |
           python main.py
