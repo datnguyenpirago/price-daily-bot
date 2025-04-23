@@ -2,7 +2,10 @@ name: Send Price Report
 
 on:
   schedule:
-    - cron: '*/3 * * * *'      # Chạy mỗi 3 phút để test
+    - cron: '16 7 * * *'      # 14:16 VN (UTC+7) = 7:16 UTC
+    - cron: '18 7 * * *'      # 14:18 VN (UTC+7) = 7:18 UTC
+    - cron: '20 7 * * *'      # 14:20 VN (UTC+7) = 7:20 UTC
+    - cron: '22 7 * * *'      # 14:22 VN (UTC+7) = 7:22 UTC
   workflow_dispatch:        
 
 jobs:
